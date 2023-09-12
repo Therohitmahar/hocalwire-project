@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap");
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 0.7rem;
+  font-family: "Poppins", sans-serif;
+  padding: 5px;
+}
+.left {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin-block: auto;
+  border-radius: 20px;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  cursor: pointer;
+}
+.left img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.5s ease-in-out;
+}
+.left .overlay {
+  position: absolute;
+  bottom: 0;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  font-size: 1rem;
+  padding: 20px;
+  transition: 0.4s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+.overlay h3 {
+  font-weight: 600;
+  color: #fcfcfc;
+}
+.overlay p {
+  color: #e9e9e988;
+  font-size: 0.8rem;
+}
+.left:hover .overlay {
+  background: linear-gradient(to bottom, rgba(255, 4, 4, 0), rgba(0, 0, 0, 0));
+}
+.left:hover img {
+  scale: 1.05;
+}
+.right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.right section {
+  aspect-ratio: 4/3;
+  border: 1px solid rgba(0, 0, 0, 0.11);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.11);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.right section:hover {
+  transform: translateY(-2px);
+  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.11);
+}
+.right section p {
+  color: #9c9c9c;
+}
+.right section h2 {
+  color: #292929;
+}
+.card-top {
+  display: flex;
+  justify-content: space-between;
+}
+.card-top span i {
+  margin-inline: 5px;
+}
+.left {
+  aspect-ratio: 4/3;
+}
+
+.fa-share {
+  color: #e44b46;
+  cursor: pointer;
+}
