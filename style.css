@@ -190,6 +190,7 @@ main {
   display: flex;
   justify-content: space-between;
 }
+
 .card-top span i {
   margin-inline: 5px;
 }
